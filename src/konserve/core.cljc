@@ -8,7 +8,8 @@
             [konserve.utils :refer [meta-update async+sync *default-sync-translation*]]
             [superv.async :refer [go-try- <?-]]
             [taoensso.timbre :refer [trace #?(:cljs debug)]])
-  #?(:cljs (:require-macros [konserve.core :refer [go-locked locked]])))
+  #?(:cljs (:require-macros [konserve.core :refer [go-locked locked]]
+                            [konserve.utils :refer [async+sync]])))
 
 ;; ACID
 
